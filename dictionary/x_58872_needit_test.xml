@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Test" max_length="40" name="x_58872_needit_test" type="collection">
+        <element label="firstName" max_length="100" name="firstname" type="string"/>
+        <element label="middleName" max_length="100" name="middlename" type="string"/>
+    </element>
+</database>
