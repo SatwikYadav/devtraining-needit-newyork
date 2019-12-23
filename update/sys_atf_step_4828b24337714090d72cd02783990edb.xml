@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Validate that the form matches the following condition:
+Requested for email = {{Step 1: Impersonate.User.Email}}
+and Requested for = {{Step 1: Impersonate.User}}
+With a failure timeout of 5 Seconds</description>
+        <display_name>Field Values Validation</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes>Validating the 'requested for email' field</notes>
+        <order>4</order>
+        <snapshot/>
+        <step_config display_value="Field Values Validation">1b97cd31872022008182c9ded0e3ece5</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-23 07:55:52</sys_created_on>
+        <sys_id>4828b24337714090d72cd02783990edb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Field Values Validation</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_atf_step_4828b24337714090d72cd02783990edb</sys_update_name>
+        <sys_updated_by>abraham.lincoln</sys_updated_by>
+        <sys_updated_on>2019-12-23 08:01:57</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <test display_value="'Requested for email' field validation">6e87b68f37314090d72cd02783990e35</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=4828b24337714090d72cd02783990edb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>4828b24337714090d72cd02783990edb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-23 07:55:52</sys_created_on>
+        <sys_id>03683a0337714090d72cd02783990e29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-23 07:55:52</sys_updated_on>
+        <value>x_58872_needit_needit</value>
+        <variable display_value="">a0e13cc35320220002c6435723dc3467</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>4828b24337714090d72cd02783990edb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-23 07:55:52</sys_created_on>
+        <sys_id>0f683a0337714090d72cd02783990e28</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>abraham.lincoln</sys_updated_by>
+        <sys_updated_on>2019-12-23 08:01:57</sys_updated_on>
+        <value>u_requested_for_email={{step['d8f7facf37314090d72cd02783990e26'].user.email}}^u_requested_for={{step['d8f7facf37314090d72cd02783990e26'].user}}^EQ</value>
+        <variable display_value="">4aa838f25320220002c6435723dc34e1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4828b24337714090d72cd02783990edb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>4828b24337714090d72cd02783990edb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-23 07:55:52</sys_created_on>
+        <sys_id>8b683a0337714090d72cd02783990e28</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>abraham.lincoln</sys_updated_by>
+        <sys_updated_on>2019-12-23 08:01:57</sys_updated_on>
+        <table>var__m_atf_input_variable_1b97cd31872022008182c9ded0e3ece5</table>
+        <value>u_requested_for_email={{step['d8f7facf37314090d72cd02783990e26'].user.email}}^u_requested_for={{step['d8f7facf37314090d72cd02783990e26'].user}}^EQ</value>
+    </sys_element_mapping>
+</record_update>
